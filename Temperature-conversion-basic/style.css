@@ -1,0 +1,105 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #36393e;
+}
+
+h1{
+    color: #2d5ca7; 
+}
+
+form{
+    background-color: #ededed; 
+    text-align: center; 
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px 0;
+    border: solid 5px; 
+    border-color: #2d5ca7;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #fff;  
+    position: relative; 
+    top: 50%; 
+    transition: border 1s , border-radius 2s , background-color 1s , transform 2s;
+    animation: 1s;
+    animation-duration: 2s;
+    animation-name: effect;
+}
+
+@keyframes effect{
+    form{transform: translateY(0%);};
+    to{    
+        transition: border 1s , border-radius 2s , background-color 1s ,transform 2s;
+        background-color: #fff;
+    
+        border: solid 5px;
+        border-color: #2d5ca7;
+        border-radius: 25px;
+        transform: translateY(50%); 
+        transform: translateY(70%); };
+}
+ 
+
+#button{
+    background-color: #ededed;
+    text-align: center;
+    margin: 0;
+    padding: 16px 16px 16px 16px;
+    border-radius: 10px;
+    transition: background-color 1s , border-radius 2s , box-shadow 0.25s;
+}
+
+#button:hover{
+    transition: background-color 1s , border-radius 2s , box-shadow 0.25s;
+    cursor: pointer;
+    background-color: #2d5ca7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #2d5ca7;
+}
+
+#textBOX   
+{
+    text-align: center;
+    margin: 0;
+    background-color: #ededed;
+    padding: 10px;
+    padding-right: 1px;
+    padding-left: 1px;
+    box-shadow: 2px 2px 3px #36393e;
+    border-radius: 5px;
+}
+
+#textBOX:hover
+{
+    transition: background-color 1s , box-shadow 1s , border-radius 2s;
+    background-color: #fff;
+    box-shadow: 0 0 0 #414750;
+    border-radius: 15px;
+}
+
+#textBOX::target-text
+{
+    transform: translateY(50%);
+    margin-left: 20px;
+}
+
+#textBOX::placeholder
+{
+    color: #414750;
+}
+
+#toCELSIUS
+{
+    cursor: pointer;
+}
+#toFAHRENHEIT
+{
+    cursor: pointer;
+}
+#cel
+{
+    cursor: pointer;
+}
+#fahr
+{
+    cursor: pointer;
+}
